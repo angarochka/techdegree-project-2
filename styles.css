@@ -1,0 +1,284 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color:  whitesmoke;
+    margin: 0 auto;
+    max-width: 1024px;
+    font: 400 100% / 1.5 "Noto Sans JP", sans-serif;
+    color: #4A4A4A;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+p {
+    color: #8f9188;
+    text-align: center;
+    line-height: 1.6rem;
+}
+
+a {
+	color: #4A4A4A;
+    text-decoration: none;
+}
+
+.chapter {
+    padding: 3rem 0;
+}
+
+.portfolio-item img, hr {
+    width: 90%;
+}
+
+/* ================================= 
+  Header
+==================================== */
+.main-header h1 {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.main-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-nav li {
+    background-color:white;
+    padding: 0.5rem;
+    margin: 0.3rem 1rem;
+}
+
+.main-nav h2 {
+    padding: 0;
+}
+
+
+/* ================================= 
+  Intro
+==================================== */
+.intro {
+    margin: 1rem;
+    padding: 1.5rem 0;
+}
+.intro img {
+    display: block;
+    margin: auto;
+    width: 70%;
+} 
+.intro p {
+    margin: 1rem 0 0 0;
+}
+
+/* ================================= 
+  Portfolio
+==================================== */
+.portfolio {
+    background-color:white; 
+}
+
+.portfolio-item img {
+    display: block;
+    margin: 1.5rem auto;
+}
+
+.portfolio-item h3 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.portfolio-item p {
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+    color: #4A4A4A;
+    padding-bottom: 1rem;
+    margin: auto;
+    width: 80%;
+}
+
+/* ================================= 
+  Contact
+==================================== */
+.contact p {
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.contact-info p {
+    padding: 0.3rem;
+}
+
+.contact span {
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+hr {
+    border: 1px solid #dadad7;
+}
+/* ================================= 
+  Footer
+==================================== */
+.main-footer {
+    padding: 0.5rem 0 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    height: 15vh;
+}
+.not-mobile {
+    display: none;
+}
+.main-footer h2 {
+    font-size: 0.8rem;
+}
+#name-link h2 {
+    text-transform: none;
+}
+
+
+/* ================================= 
+  Website Tablet Element Styles
+==================================== */
+@media (min-width: 768px) {
+
+    /*======== Base Element Styles ========*/
+    body {
+        margin-top: 2rem;
+    }
+    p {
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+    .main-header,
+    .main-nav,
+    .intro,
+    .portfolio-items {
+        display: flex;
+    }
+    /*======== Header and Navigation ========*/
+    .main-header {
+        flex-direction: column;
+    }
+    .main-nav {
+        justify-content: center;
+    }
+    .main-nav li {
+        background-color:whitesmoke;
+    }
+    /*======== Intro ========*/
+    .intro {
+        padding: 1.5rem 0 2rem 0;
+    }
+    .intro p {
+        order: -1;
+        text-align: left;
+        padding: 0 0.5rem;
+    }
+    .intro img {
+        width: 40%;
+    }
+    /*======== Portfolio ========*/
+    .portfolio-items {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .portfolio-item {
+        flex-basis: 50%;
+        padding: 0.5rem 0;
+    }
+    .portfolio-item p {
+        width: 60%;
+    }
+    /*======== Contact ========*/
+    .contact {
+        width: 70%;
+        margin: auto;
+    }
+    .contact-info {
+        padding-top: 1.5rem;
+    }
+    .contact-info p {
+        padding: 0.5rem;
+    }
+    /*======== Footer ========*/
+    .mobile {
+        display: none;
+    }
+    .not-mobile {
+        display: block;
+        padding-left: 2rem;
+    }
+    #name-link {
+        margin-right: auto;
+    }
+}
+
+/* ================================= 
+  Website Desktop Element Styles
+==================================== */
+@media (min-width: 1024px) {
+
+    /*======== Base Element Styles ========*/
+    body {
+        padding: 0 1.5rem;
+    }
+
+    .main-header {
+        display: flex;
+    }
+
+    /*======== Header and Navigation ========*/
+
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2rem;
+    }
+    .main-header h1 {
+        margin-right: auto;
+        padding-left: 1.5rem;
+    }
+    .main-nav li {
+        padding: 0.5rem 0;
+        margin: 0.3rem 1rem;
+    }
+    .main-nav a {
+        text-align: center;
+        display: block;
+    }
+
+    /*======== Portfolio ========*/
+
+    .portfolio-item {
+        flex-basis: 33%;
+        padding: 0.5rem 0;
+    }
+     .portfolio-item p {
+        width: 80%;
+    } 
+
+}
